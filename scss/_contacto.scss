@@ -1,0 +1,41 @@
+.contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin-left: 5rem;
+}
+
+.btn {
+    margin: 1rem;
+} 
+
+
+@media screen and (max-width: 400px) {
+  
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-left: 1rem;
+}
+
+.btn {
+    margin: 1rem;
+}
+
+}

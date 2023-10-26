@@ -1,0 +1,55 @@
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.section1__Takeaway-text1 {
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+    border: solid rgb(25, 215, 0) 3px;
+}
+
+.section1__Takeaway-text2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-decoration: underline;
+}
+
+.inicio2__veggie-imagen {
+    width: 90%;
+
+}
+
+    @media screen and (max-width: 400px) {
+
+    .section1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+  }
+
+  .section1__Takeaway-text1 {
+      padding: 1rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #000000;
+      border: solid rgb(25, 215, 0) 3px;
+  }
+
+  .section1__Takeaway-text2 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #000000;
+      text-decoration: underline;
+  }
+
+  .inicio2__veggie-imagen {
+      width: 90%;
+
+  }
+
+}

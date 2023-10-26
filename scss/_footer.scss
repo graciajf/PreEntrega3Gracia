@@ -1,0 +1,22 @@
+.footer {
+    height: 200px;
+    background-color: rgb(170, 136, 1);
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerRedes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-1 {
+    width: 50px;
+    margin: 1rem;
+}

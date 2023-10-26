@@ -1,0 +1,181 @@
+.burger-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(200, 243, 46);
+    padding-left: 15px;
+    color: #000000;
+}
+
+.menu {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 2;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "ele1 ele2"
+    "ele3 ele4"
+    "ele5 ele6";
+    background-color: #000000;
+}
+
+.grid1 {
+    grid-area: ele1;
+    width: 400px;
+}
+
+
+.grid2 {
+    grid-area: ele2;
+    width: 400px;
+}
+
+
+.grid3 {
+    grid-area: ele3;
+    width: 400px;
+}
+
+
+.grid4 {
+    grid-area: ele4;
+    width: 400px;
+}
+
+
+.grid5 {
+    grid-area: ele5;
+    width: 400px;
+}
+
+.grid6 {
+    grid-area: ele6;
+    width: 400px;
+}
+
+.menuTitulo {
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    margin: 3px;
+}
+
+.menuDesc {
+    color: antiquewhite;
+    font-size: 1.2rem;
+    margin: 5px;
+}
+
+    .containerMenu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 3rem;
+      box-shadow: -8px -10px 5px 0px rgb(255, 255, 255);
+    -webkit-box-shadow: -8px -10px 5px 0px rgb(255, 255, 255);
+    -moz-box-shadow: -8px -10px 5px 0px rgb(254, 254, 254);
+    }
+
+    .menuImg {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+
+    @media screen and (max-width: 1499px) {
+
+        .burger-text {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 1rem;
+            text-align: center;
+            background-color: rgb(200, 243, 46);
+            padding-left: 15px;
+            color: #000000;
+        }
+        
+        .menu {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: 2;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 
+            "ele1 ele2"
+            "ele3 ele4"
+            "ele5 ele6";
+            background-color: #000000;
+        }
+        
+        .grid1 {
+            grid-area: ele1;
+            width: 400px;
+        }
+        
+        
+        .grid2 {
+            grid-area: ele2;
+            width: 400px;
+        }
+        
+        
+        .grid3 {
+            grid-area: ele3;
+            width: 400px;
+        }
+        
+        
+        .grid4 {
+            grid-area: ele4;
+            width: 400px;
+        }
+        
+        
+        .grid5 {
+            grid-area: ele5;
+            width: 400px;
+        }
+        
+        .grid6 {
+            grid-area: ele6;
+            width: 400px;
+        }
+        
+        .menuTitulo {
+            color: aliceblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.5rem;
+            margin: 3px;
+        }
+        
+        .menuDesc {
+            color: antiquewhite;
+            font-size: 1.2rem;
+            margin: 5px;
+        }
+        
+            .containerMenu {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              margin: 3rem;
+              box-shadow: -8px -10px 5px 0px rgb(255, 255, 255);
+            -webkit-box-shadow: -8px -10px 5px 0px rgb(255, 255, 255);
+            -moz-box-shadow: -8px -10px 5px 0px rgb(254, 254, 254);
+            }
+        
+            .menuImg {
+                width: 350px;
+                height: 350px;
+                object-fit: cover;
+                border-radius: 5px;
+                margin: 5px;
+            }
+    }
+
+    

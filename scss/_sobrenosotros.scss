@@ -1,0 +1,101 @@
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros_Historia {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros_Historia-Imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros_Historia-Familia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+}
+
+.nosotros_Historia-Titulo {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: rgb(1, 96, 64);
+    margin: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nosotros_Historia-Txt {
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.imgNosotros{
+    width: 350px;
+    text-align: center;
+    margin: 1rem;
+} 
+
+@media screen and (max-width: 1150px) {
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nosotros_Historia {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nosotros_Historia-Imagenes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nosotros_Historia-Familia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+    }
+    
+    .nosotros_Historia-Titulo {
+        font-size: 1.5rem;
+        font-weight: 100;
+        color: rgb(1, 96, 64);
+        margin: 1rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .nosotros_Historia-Txt {
+        font-size: 1rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .imgNosotros{
+        width: 350px;
+        text-align: center;
+        margin: 1rem;
+    } 
+}
+
