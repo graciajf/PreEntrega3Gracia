@@ -34,6 +34,20 @@
   height: 70px;
   filter: brightness(100%);
 }
+.nav__Logo-img:hover {
+  animation: girarLogo 1s linear;
+}
+@keyframes girarLogo {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  from {
+    transform: rotate(0);
+  }
+}
 
 .section1 {
   display: flex;
@@ -104,44 +118,44 @@
 
 .grid1 {
   grid-area: ele1;
-  width: 400px;
+  width: 350px;
 }
 
 .grid2 {
   grid-area: ele2;
-  width: 400px;
+  width: 350px;
 }
 
 .grid3 {
   grid-area: ele3;
-  width: 400px;
+  width: 350px;
 }
 
 .grid4 {
   grid-area: ele4;
-  width: 400px;
+  width: 350px;
 }
 
 .grid5 {
   grid-area: ele5;
-  width: 400px;
+  width: 350px;
 }
 
 .grid6 {
   grid-area: ele6;
-  width: 400px;
+  width: 350px;
 }
 
 .menuTitulo {
   color: aliceblue;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 3px;
 }
 
 .menuDesc {
   color: antiquewhite;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 5px;
 }
 
@@ -150,22 +164,112 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 3rem;
+  margin: 2rem;
   box-shadow: -8px -10px 5px 0px rgb(255, 255, 255);
   -webkit-box-shadow: -8px -10px 5px 0px rgb(255, 255, 255);
   -moz-box-shadow: -8px -10px 5px 0px rgb(254, 254, 254);
 }
+.containerMenu:hover {
+  animation: expandirMenu 2s forwards linear;
+}
 
+@keyframes expandirMenu {
+  to {
+    transform: scale(0deg);
+  }
+  from {
+    transform: scale(1.1);
+    box-shadow: -8px -10px 5px 0px rgb(219, 24, 154);
+    -webkit-box-shadow: -8px -10px 5px 0px rgb(224, 59, 114);
+    -moz-box-shadow: -8px -10px 5px 0px rgb(168, 24, 84);
+  }
+}
 .menuImg {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
   margin: 5px;
 }
 
-@media screen and (max-width: 1499px) {
+@media screen and (max-width: 850px) {
+  .burger-text {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(200, 243, 46);
+    padding-left: 15px;
+    color: #000000;
+  }
+  .containerMenu {
+    text-align: center;
+    margin: 0;
+  }
+  .menu {
+    width: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: repeat(6, 400px);
+    grid-template-areas: "ele1" "ele2" "ele3" "ele4" "ele5" "ele6";
+    background-color: #000000;
+  }
+  .grid1 {
+    grid-area: ele1;
+    width: 350px;
+  }
+  .grid2 {
+    grid-area: ele2;
+    width: 350px;
+  }
+  .grid3 {
+    grid-area: ele3;
+    width: 350px;
+  }
+  .grid4 {
+    grid-area: ele4;
+    width: 350px;
+  }
+  .grid5 {
+    grid-area: ele5;
+    width: 350px;
+  }
+  .grid6 {
+    grid-area: ele6;
+    width: 350px;
+  }
+  .menuTitulo {
+    color: aliceblue;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    margin: 3px;
+  }
+  .menuDesc {
+    color: antiquewhite;
+    font-size: 1rem;
+    margin: 5px;
+  }
+  .containerMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    box-shadow: -8px -10px 5px 0px rgb(255, 255, 255);
+    -webkit-box-shadow: -8px -10px 5px 0px rgb(255, 255, 255);
+    -moz-box-shadow: -8px -10px 5px 0px rgb(254, 254, 254);
+  }
+  .menuImg {
+    width: 200px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 400px) {
   .burger-text {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     padding: 1rem;
@@ -178,49 +282,49 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 2;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "ele1 ele2" "ele3 ele4" "ele5 ele6";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 350px);
+    grid-template-areas: "ele1" "ele2" "ele3" "ele4" "ele5" "ele6";
     background-color: #000000;
   }
   .grid1 {
     grid-area: ele1;
-    width: 400px;
+    width: 270px;
   }
   .grid2 {
     grid-area: ele2;
-    width: 400px;
+    width: 270px;
   }
   .grid3 {
     grid-area: ele3;
-    width: 400px;
+    width: 270px;
   }
   .grid4 {
     grid-area: ele4;
-    width: 400px;
+    width: 270px;
   }
   .grid5 {
     grid-area: ele5;
-    width: 400px;
+    width: 270px;
   }
   .grid6 {
     grid-area: ele6;
-    width: 400px;
+    width: 270px;
   }
   .menuTitulo {
     color: aliceblue;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 3px;
   }
   .menuDesc {
     color: antiquewhite;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 5px;
   }
   .containerMenu {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 3rem;
@@ -229,8 +333,8 @@
     -moz-box-shadow: -8px -10px 5px 0px rgb(254, 254, 254);
   }
   .menuImg {
-    width: 350px;
-    height: 350px;
+    width: 200px;
+    height: 200px;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 5px;
@@ -282,11 +386,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 3rem;
+  margin: 1.5rem;
 }
 
 .bancoImg {
-  width: 400px;
+  width: 300px;
 }
 
 .bancoDesc {
@@ -295,6 +399,57 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+@media screen and (max-width: 768px) {
+  .sec-promociones {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    grid-template-areas: "ele1" "ele2" "ele3" "ele4";
+  }
+  .promo1 {
+    grid-area: ele1;
+    margin: 5px;
+    padding: 1rem;
+    margin: 0;
+  }
+  .promo2 {
+    grid-area: ele2;
+    margin: 1rem;
+  }
+  .promo3 {
+    grid-area: ele3;
+    margin: 1rem;
+  }
+  .promo4 {
+    grid-area: ele4;
+    margin: 1rem;
+  }
+  .promoTitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin-top: 2rem;
+  }
+  .promoBancos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+  }
+  .bancoImg {
+    width: 350px;
+  }
+  .bancoDesc {
+    margin: 1rem;
+    font-size: 1.1rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+}
 @media screen and (max-width: 400px) {
   .sec-promociones {
     display: grid;
@@ -326,7 +481,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1rem;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     margin-top: 2rem;
   }
@@ -335,29 +490,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3rem;
+    margin: 1rem;
   }
   .bancoImg {
-    width: 400px;
+    width: 260px;
   }
   .bancoDesc {
     margin: 1rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 }
+/* USO DE MIXIN */
 .nosotros {
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .nosotros_Historia {
-  display: flex;
   flex-direction: column;
   width: 90vw;
   padding: 1rem;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -370,9 +526,9 @@
 
 .nosotros_Historia-Familia {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 60vw;
 }
 
@@ -398,17 +554,17 @@
 @media screen and (max-width: 1150px) {
   .nosotros {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .nosotros_Historia {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 90vw;
     padding: 1rem;
-    justify-content: center;
-    align-items: center;
   }
   .nosotros_Historia-Imagenes {
     display: flex;
@@ -417,17 +573,18 @@
     align-items: center;
   }
   .nosotros_Historia-Familia {
-    display: flex;
     flex-direction: column;
+    width: 90vw;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 90vw;
   }
   .nosotros_Historia-Titulo {
     font-size: 1.5rem;
     font-weight: 100;
     color: rgb(1, 96, 64);
     margin: 1rem;
+    text-align: center;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
   .nosotros_Historia-Txt {
@@ -493,6 +650,8 @@
 .contacto {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   justify-content: space-around;
   margin-bottom: 2rem;
 }
@@ -508,7 +667,7 @@
   margin: 1rem;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 760px) {
   .contacto {
     display: flex;
     flex-direction: column;
@@ -523,6 +682,9 @@
   }
   .btn {
     margin: 1rem;
+  }
+  .bancoDesc {
+    text-align: center;
   }
 }
 .footer {

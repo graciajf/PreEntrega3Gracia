@@ -1,5 +1,8 @@
+$fontFamilyPrimaria: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$color-primario: #3498db;
+
 .burger-text {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: $fontFamilyPrimaria;
     padding: 1rem;
     text-align: center;
     background-color: rgb(200, 243, 46);
@@ -22,48 +25,48 @@
 
 .grid1 {
     grid-area: ele1;
-    width: 400px;
+    width: 350px;
 }
 
 
 .grid2 {
     grid-area: ele2;
-    width: 400px;
+    width: 350px;
 }
 
 
 .grid3 {
     grid-area: ele3;
-    width: 400px;
+    width: 350px;
 }
 
 
 .grid4 {
     grid-area: ele4;
-    width: 400px;
+    width: 350px;
 }
 
 
 .grid5 {
     grid-area: ele5;
-    width: 400px;
+    width: 350px;
 }
 
 .grid6 {
     grid-area: ele6;
-    width: 400px;
+    width: 350px;
 }
 
 .menuTitulo {
     color: aliceblue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.5rem;
+    font-family: $fontFamilyPrimaria;
+    font-size: 1rem;
     margin: 3px;
 }
 
 .menuDesc {
     color: antiquewhite;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 5px;
 }
 
@@ -72,25 +75,139 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 3rem;
+      margin: 2rem;
       box-shadow: -8px -10px 5px 0px rgb(255, 255, 255);
     -webkit-box-shadow: -8px -10px 5px 0px rgb(255, 255, 255);
     -moz-box-shadow: -8px -10px 5px 0px rgb(254, 254, 254);
+    &:hover {
+        animation: expandirMenu 2s forwards linear;
+    }
+    }
+
+    @keyframes expandirMenu {
+        to {
+            transform: scale(0deg);
+        }
+        from {
+            transform: scale(1.1);
+            box-shadow: -8px -10px 5px 0px rgb(219, 24, 154);
+    -webkit-box-shadow: -8px -10px 5px 0px rgb(224, 59, 114);
+    -moz-box-shadow: -8px -10px 5px 0px rgb(168, 24, 84);
+        }
     }
 
     .menuImg {
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
         object-fit: cover;
         border-radius: 5px;
         margin: 5px;
     }
 
 
-    @media screen and (max-width: 1499px) {
+    @media screen and (max-width: 850px) {
 
         .burger-text {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: $fontFamilyPrimaria;
+            padding: 1rem;
+            text-align: center;
+            background-color: rgb(200, 243, 46);
+            padding-left: 15px;
+            color: #000000;
+        }
+
+        .containerMenu {
+            text-align: center;
+            margin: 0;
+        }
+        
+        .menu {
+            width: auto;
+            display: grid;
+            justify-content: center;
+            align-items: center; 
+            grid-template-rows: repeat(6, 400px); 
+            grid-template-areas: 
+                "ele1"
+                "ele2"
+                "ele3"
+                "ele4"
+                "ele5"
+                "ele6";
+            background-color: #000000;
+        }
+
+        
+        .grid1 {
+            grid-area: ele1;
+            width: 350px;
+        }
+        
+        
+        .grid2 {
+            grid-area: ele2;
+            width: 350px;
+        }
+    
+    
+        .grid3 {
+            grid-area: ele3;
+            width: 350px;
+        }
+        
+        
+        .grid4 {
+            grid-area: ele4;
+            width: 350px;
+        }
+        
+        
+        .grid5 {
+            grid-area: ele5;
+            width: 350px;
+        }
+        
+        .grid6 {
+            grid-area: ele6;
+            width: 350px;
+        }
+        
+        .menuTitulo {
+            color: aliceblue;
+            font-family: $fontFamilyPrimaria;
+            font-size: 1rem;
+            margin: 3px;
+        }
+        
+        .menuDesc {
+            color: antiquewhite;
+            font-size: 1rem;
+            margin: 5px;
+        }
+        
+            .containerMenu {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              align-items: center;
+              margin: 3rem;
+              box-shadow: -8px -10px 5px 0px rgb(255, 255, 255);
+            -webkit-box-shadow: -8px -10px 5px 0px rgb(255, 255, 255);
+            -moz-box-shadow: -8px -10px 5px 0px rgb(254, 254, 254);
+            }
+        
+            .menuImg {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 5px;
+                margin: 5px;
+            }
+    }
+
+    @media screen and (max-width: 400px) {
+        .burger-text {
+            font-family: $fontFamilyPrimaria;
             padding: 1rem;
             text-align: center;
             background-color: rgb(200, 243, 46);
@@ -102,65 +219,69 @@
             display: grid;
             justify-content: center;
             align-items: center;
-            grid-template-columns: 2;
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: 1fr; 
+            grid-template-rows: repeat(6, 350px);
             grid-template-areas: 
-            "ele1 ele2"
-            "ele3 ele4"
-            "ele5 ele6";
+                "ele1"
+                "ele2"
+                "ele3"
+                "ele4"
+                "ele5"
+                "ele6";
             background-color: #000000;
         }
+
         
         .grid1 {
             grid-area: ele1;
-            width: 400px;
+            width: 270px;
         }
         
         
         .grid2 {
             grid-area: ele2;
-            width: 400px;
+            width: 270px;
         }
-        
-        
+    
+    
         .grid3 {
             grid-area: ele3;
-            width: 400px;
+            width: 270px;
         }
         
         
         .grid4 {
             grid-area: ele4;
-            width: 400px;
+            width: 270px;
         }
         
         
         .grid5 {
             grid-area: ele5;
-            width: 400px;
+            width: 270px;
         }
         
         .grid6 {
             grid-area: ele6;
-            width: 400px;
+            width: 270px;
         }
         
         .menuTitulo {
             color: aliceblue;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: 1.5rem;
+            font-family: $fontFamilyPrimaria;
+            font-size: 1rem;
             margin: 3px;
         }
         
         .menuDesc {
             color: antiquewhite;
-            font-size: 1.2rem;
+            font-size: 1rem;
             margin: 5px;
         }
         
             .containerMenu {
               display: flex;
-              flex-direction: column;
+              flex-wrap: wrap;
               justify-content: center;
               align-items: center;
               margin: 3rem;
@@ -170,12 +291,10 @@
             }
         
             .menuImg {
-                width: 350px;
-                height: 350px;
+                width: 200px;
+                height: 200px;
                 object-fit: cover;
                 border-radius: 5px;
                 margin: 5px;
             }
     }
-
-    

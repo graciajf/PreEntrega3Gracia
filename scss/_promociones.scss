@@ -45,11 +45,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3rem;
+    margin: 1.5rem;
 }
 
 .bancoImg {
-    width: 400px;
+    width: 300px;
 }
 
 .bancoDesc {
@@ -58,6 +58,71 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+@media screen and (max-width: 768px) {
+
+    .sec-promociones {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1;
+        grid-template-rows: 1;
+        grid-template-areas: 
+        "ele1"
+        "ele2"
+        "ele3"
+        "ele4";
+    }
+    
+    .promo1 {
+        grid-area: ele1;
+        margin: 5px;
+        padding: 1rem;
+        margin: 0;
+    }
+    
+    .promo2 {
+        grid-area: ele2;
+        margin: 1rem;
+    }
+    
+    .promo3 {
+        grid-area: ele3;
+        margin: 1rem;
+    }
+    
+    .promo4 {
+        grid-area: ele4;
+        margin: 1rem;
+    }
+    
+    .promoTitulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-top: 2rem;
+    }
+    
+    .promoBancos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+    
+    .bancoImg {
+        width: 350px;
+    }
+    
+    .bancoDesc {
+        margin: 1rem;
+        font-size: 1.1rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    }
 
 @media screen and (max-width: 400px) {
 
@@ -100,7 +165,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 2rem;
 }
@@ -110,16 +175,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3rem;
+    margin: 1rem;
 }
 
 .bancoImg {
-    width: 400px;
+    width: 260px;
 }
 
 .bancoDesc {
     margin: 1rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 

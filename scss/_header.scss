@@ -32,4 +32,19 @@
     width: 70px;
     height: 70px;
     filter: brightness(100%);
+    &:hover {
+        animation: girarLogo 1s linear;
+    }
+
+    @keyframes girarLogo {
+        from {
+        transform: rotate(0)
+        }
+        to {
+        transform: rotate(360deg);
+        }
+        from {
+            transform: rotate(0);
+        }
+    }
 }
