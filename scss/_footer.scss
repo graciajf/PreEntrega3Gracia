@@ -1,4 +1,5 @@
 .footer {
+    width: auto;
     height: 200px;
     background-color: rgb(170, 136, 1);
 }
@@ -19,4 +20,36 @@
 .footer-1 {
     width: 50px;
     margin: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+    .footer {
+        width: auto;
+        height: auto;
+        background-color: rgb(170, 136, 1);
+    }
+    
+    .redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footerRedes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    .footer-1 {
+        width: 50px;
+        margin: 1rem;
+
+        .bancoDesc {
+            font-size: 10px;
+            text-align: center;
+        }
+    }
 }

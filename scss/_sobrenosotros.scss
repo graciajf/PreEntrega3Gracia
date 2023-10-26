@@ -99,3 +99,59 @@
     } 
 }
 
+@media screen and (max-width: 400px) {
+    .nosotros {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+    }
+    
+    .nosotros_Historia {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nosotros_Historia-Imagenes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nosotros_Historia-Familia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+    }
+    
+    .nosotros_Historia-Titulo {
+        font-size: 1.5rem;
+        font-weight: 100;
+        text-align: center;
+        color: rgb(1, 96, 64);
+        margin: 1rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .nosotros_Historia-Txt {
+        text-align: center;
+        font-size: 1rem;
+        width: 80vw;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .imgNosotros{
+        width: 280px;
+        text-align: center;
+        margin: 1rem;
+    } 
+}

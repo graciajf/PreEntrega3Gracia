@@ -440,6 +440,56 @@
     margin: 1rem;
   }
 }
+@media screen and (max-width: 400px) {
+  .nosotros {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+  }
+  .nosotros_Historia {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .nosotros_Historia-Imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .nosotros_Historia-Familia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+  }
+  .nosotros_Historia-Titulo {
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: center;
+    color: rgb(1, 96, 64);
+    margin: 1rem;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .nosotros_Historia-Txt {
+    text-align: center;
+    font-size: 1rem;
+    width: 80vw;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .imgNosotros {
+    width: 280px;
+    text-align: center;
+    margin: 1rem;
+  }
+}
 .contacto {
   display: flex;
   flex-direction: row;
@@ -476,6 +526,7 @@
   }
 }
 .footer {
+  width: auto;
   height: 200px;
   background-color: rgb(170, 136, 1);
 }
@@ -496,4 +547,32 @@
 .footer-1 {
   width: 50px;
   margin: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+  .footer {
+    width: auto;
+    height: auto;
+    background-color: rgb(170, 136, 1);
+  }
+  .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerRedes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .footer-1 {
+    width: 50px;
+    margin: 1rem;
+  }
+  .footer-1 .bancoDesc {
+    font-size: 10px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
